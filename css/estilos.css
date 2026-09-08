@@ -348,8 +348,17 @@ ul {
   font-size: 0.9rem;
 }
 
-.info-pill span {
+.info-pill span,
+.info-pill a {
   color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.info-pill a:hover,
+.info-pill a:focus-visible {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 .hero-actions {
